@@ -1,0 +1,455 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher Barnard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+body{margin-top:20px;}
+.timeline {
+    border-left: 3px solid rgb(13, 110, 253);
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(207, 226, 255, 0.753);
+    margin: 0 auto;
+    letter-spacing: 0.2px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    max-width: 70%;
+}
+
+@media (max-width: 767px) {
+    .timeline {
+        max-width: 98%;
+        padding: 25px;
+    }
+}
+
+.timeline h1 {
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+.timeline h2,
+.timeline h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.timeline .event {
+    border-bottom: 1px dashed rgb(13, 110, 253);
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .timeline .event {
+        padding-top: 30px;
+    }
+}
+
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .event:before {
+    left: -207px;
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+}
+
+@media (max-width: 767px) {
+    .timeline .event:before {
+        left: 0px;
+        text-align: left;
+    }
+}
+
+.timeline .event:after {
+    -webkit-box-shadow: 0 0 0 3px rgb(13, 110, 253);
+    box-shadow: 0 0 0 3px rgb(13, 110, 253);
+    left: -55.8px;
+    background: #fff;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    content: "";
+    top: 5px;
+}
+
+@media (max-width: 767px) {
+    .timeline .event:after {
+        left: -31.8px;
+    }
+}
+
+.rtl .timeline {
+    border-left: 0;
+    text-align: right;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-right: 3px solid rgb(13, 110, 253);
+}
+
+.rtl .timeline .event::before {
+    left: 0;
+    right: -170px;
+}
+
+.rtl .timeline .event::after {
+    left: 0;
+    right: -55.8px;
+}
+
+hr.top {
+  border: 3px solid rgb(13, 110, 253);
+  border-radius: 5px;
+}
+
+hr.bottom {
+  border: 5px solid rgb(13, 110, 253);
+  border-radius: 5px;
+}
+
+</style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <section>
+        <div class = "container">
+            <div class = "row">
+                <div class="col-sm-8">
+                    <hr class="top">
+                    <h1><strong>Christopher Barnard</strong></h1>
+                    <h3>BSc Graduate, Software Engineer, Freelance Writer and Editor</h3>
+                    <hr class="bottom">
+                </div>
+                <div class="col-sm-4">
+                    <center><img src = "https://i.imgur.com/H4h6ojG_d.jpg?maxwidth=520&shape=thumb&fidelity=high" 
+                    class = "rounded-circle" alt = "Rounded Image" width = "200" height = "200"></center>
+                </div>
+            </div>
+            <div class = "row">
+                <div class="col-sm-12">
+                    <p>I am an Entomology graduate from the University of Pretoria. I completed my
+                        honours in Entomology in modeling the species distribution of
+                        biting midges and how suction trap data can be used as a predictive
+                        measure for veterinary disease occurances and outbreaks.<br/>
+                        I received training in software engineering from Hyperion Development where
+                        I became proficient in the Python language, including using mySQL and Django
+                        to create websites using HTML, CSS and Bootstrap.<br/>
+                        I am an open-minded individual with a practical approach to problem solving
+                        as well as a passion for micro electronics and machine learning and green IoT systems. 
+                        I am also a good listener, team player and fast learner. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br/>
+    <section>
+        <div class = "container">
+            <div class = "row">
+                <div class="col-sm-12">
+                    <hr class="top">
+                    <h3><strong>Contact details</strong></h3>
+                    <hr class="bottom">
+                    <p>Phone number: 076 252 4637</p>
+                    <p>Email address: christopherbarnard060@gmail.com</p>
+                    <p>LinkedIn profile: https://www.linkedin.com/in/christopher-barnard-75020a244/</p>
+      
+                </div>
+            </div>
+        </div>
+    </section>
+    <br/>
+    <section>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-sm-12">
+                    <hr class="top">
+                    <h3><strong>Skills and Competencies</strong></h3>
+                    <hr class="bottom">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Languages
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>English (written and spoken)</li>
+                                    <li>Afrikaans (written and spoken)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Computer Literacy
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Proficient in Microsoft Office including Word, Excel and PowerPoint</li>
+                                    <li>R and RStudio software</li>
+                                    <li>Statistica software</li>
+                                    <li>Statistical analysis</li>
+                                    <li>Python</li>
+                                    <ul>
+                                        <li>General python language</li>
+                                        <li>Django websites</li>
+                                        <li>MySQL</li>
+                                    </ul>
+                                    <li>SQL</li>
+                                    <li>Website building</li>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+                                </ul>                
+                                </div>
+                        </div>
+                        </div>
+                        <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Laboratory
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Experience with pipetting, preparing media and weighing out substances</li>
+                                    <li>Able to work practicing sterile techniques</li>
+                                    <li>Proficient in the use and maintenance of light microscopes</li>
+                                    <li>Can perform bioassays</li>      
+                                </ul>                             
+                            </div>
+                        </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Research
+                            </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Quantitative and qualitative research skills</li>
+                                    <li>Experience in data collection and data analysis using statistical software</li>
+                                    <li>Field experience collecting data using pitfall traps in Sani Pass relating to ant diversity</li>
+                                    <li>Proficient in collecting and pinning insects for insect collection and display purposes</li>      
+                                </ul>                             
+                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Drivers License
+                            </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Code B</li>
+                                    </ul>                             
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br/>
+    <section>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-sm-12">
+                    <hr class="top">
+                    <h3><strong>Education</strong></h3>
+                    <hr class="bottom">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div id="content">
+                                <ul class="timeline">
+                                    <li class="event" data-date="2022 - 2023">
+                                        <h3>Software engineering</h3>
+                                    </li>
+                                    <li class="event" data-date="2020">
+                                        <h3>BSc (Hons) Entomology, University of Pretoria</h3>
+                                    </li>
+                                    <li class="event" data-date="2016 - 2019">
+                                        <h3>BSc Entomology, University of Pretoria</h3>
+                                    </li>
+                                    <li class="event" data-date="2015">
+                                        <h3>Brainline (IEB)</h3>
+                                    </li>
+                                    <li class="event" data-date="2010 - 2014">
+                                        <h3>CVO School Pretoria (IEB)</h3>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br/>
+    <section>
+        <div class = "container">
+            <hr class="top">
+            <h3><strong>Work Experience</strong></h3>
+            <hr class="bottom">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="content">
+                            <ul class="timeline">
+                                <li class="event" data-date="2021-Present">
+                                    <h3>Studypool writer</h3>
+                                    <ul>
+                                        <li>Essay writing and research</li>
+                                        <li>Translation work</li>
+                                    </ul>
+                                </li>
+                                <li class="event" data-date="2020 - 2022">
+                                    <h3>Research assistant at Corteva Agriscience</h3>
+                                    <ul>
+                                        <li>Crop damage evaluation</li>
+                                        <li>Insect identification</li>
+                                        <li>Documentation of data</li>
+                                        <li>Data sorting and filing</li>
+                                        <li>Inventory sorting</li>
+                                        <li>Field planting map layout and T-markers</li>
+                                        <li>Trait presence testing in crops</li>
+                                    </ul>                                    </li>
+                                <li class="event" data-date="2019 - 2020">
+                                    <h3>GreenIoT</h3>
+                                    <ul>
+                                        <li>Building and testing environmental sensor systems</li>
+                                        <li>Interpreting sensor data</li>
+                                        <li>Waterproofing of electrical circuits</li>
+                                    </ul>                                    </li>
+                                <li class="event" data-date="2018 - 2019">
+                                    <h3>Corteva Agriscience EOH employee</h3>
+                                    <ul>
+                                        <li>Crop damage evaluation</li>
+                                        <li>Non target organism trap setup</li>
+                                        <li>Small cage trials observation for maize and soy</li>
+                                        <li>Assistance with planting trials on the back of a cone planter</li>
+                                        <li>Basic understanding of greenhouse trials and maintenance</li>
+                                        <li>Field planting map layout and T-markers</li>
+                                        <li>Assistance with insect rearing, data capture and data graphs for daily temperature, daily humidity and infesting information</li>
+                                        <li>Infesting and refeeding of <em>Buseola fusca</em>,&nbsp;&nbsp;<em>Spodoptera frugiperda</em>,&nbsp;&nbsp;<em>Helicoverpa armigera</em>&nbsp;and&nbsp;&nbsp;<em>Chilo partellus</em></li>
+                                        <li>Bioassay experience, weighing of diet for assays and weighing of larvae after seven days</li>
+                                    </ul>                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <br/>
+    <section>
+        <div class = "container">
+            <hr class="top">
+            <h3><strong>Previous Projects</strong></h3>
+            <hr class="bottom">
+            <div class="row">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Stocktaking program</h5>
+                            <p class="card-text">Program to aid in managing a warehouse and stocktaking.</p>
+                            <a href="https://github.com/ChrisTheFish96/Stocktaking-program" class="btn btn-primary">Checkout the code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Financial Calculator</h5>
+                            <p class="card-text">A program to act as a financial calculator.</p>
+                            <a href="https://github.com/ChrisTheFish96/Variables-and-Control-Structures" class="btn btn-primary">Checkout the code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Task manager program</h5>
+                            <p class="card-text">A program with a login portion to manage a teams tasks within an organization. Different menus for admin and employee use.</p>
+                            <a href="https://github.com/ChrisTheFish96/Task-manager" class="btn btn-primary">Checkout the code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Database for a bookstore</h5>
+                            <p class="card-text">An example program to create a database in SQLite to manage a bookstore.</p>
+                            <a href="https://github.com/ChrisTheFish96/Databasis-in-SQLite" class="btn btn-primary">Checkout the code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br/>
+    <section>
+        <div class = "container">
+            <hr class="top">
+            <h3><strong>References</strong></h3>
+            <hr class="bottom">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h5><strong>Christopher Weldon</strong></h5>
+                    <p><em>Senior Lecturer, University of Pretoria</em></p>
+                    <p>Email address: cwweldon@zoology.up.ac.za</p>
+                    <a href="https://www.up.ac.za/zoology-entomology/view/staffprofile/3676"><p>Staff Profile</p></a>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h5><strong>Marlene van Rooyen</strong></h5>
+                    <p><em>Scientist</em></p>
+                    <p>Email address: marlene.vanrooyen@corteva.com</p>
+                    <a href="https://za.linkedin.com/in/marlene-van-rooyen-183070218"><p>LinkedIn profile</p></a>
+                </div>
+            </div>
+    </section>
+    <br/>
+</body>
+</html>
